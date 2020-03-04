@@ -8,4 +8,8 @@ class Artist
     @died = info[:died]
     @country = info[:country]
   end
+
+  def age_at_death
+    age = @died.to_i - @born.to_i
+  end
 end
